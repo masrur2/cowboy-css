@@ -100,6 +100,7 @@ label,legend {display: block;margin-bottom: .5rem;}
 @media (max-width:1080px){.desktop-show{display:none;}}
 @media (min-width:1080px){.desktop-hide{display:none;}}
 
+.u-full-height {height: 100%;}
 .u-full-width {width: 100%!important;}
 .u-max-full-width {max-width: 100%;}
 .u-pull-right {float: right}
