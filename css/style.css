@@ -1,5 +1,5 @@
 :root{
-    --border-color: #ddd;
+    --border-color: #bbb;
     --color-offwhite: #f9f9f9;
 }
 
@@ -38,13 +38,10 @@
 .columns.grow{flex-grow: 1;}
 .columns.shrink{flex-shrink: 1;}
 .columns.align-right{margin-left:auto;}
-.container:after,.u-cf {content: "";display: table;clear: both}
 
 @media (min-width: 550px) {
     .columns {padding:0 10px;box-sizing: border-box;}
     .columns.auto{width:auto;}
-    .row.table{display:table-row;width:100%;}
-    .row.table .columns{display:table-cell;vertical-align: top;}
     .one.columns {max-width: 8.3333333333%; flex-basis: 8.3333333333%;}
     .two.columns {max-width: 16.6666666667%; flex-basis: 16.6666666667%;}
     .three.columns {max-width: 25%; flex-basis: 25%;}
@@ -69,12 +66,13 @@
 @media (max-width:1080px){.desktop-show{display:none;}}
 @media (min-width:1080px){.desktop-hide{display:none;}}
 
-.u-full-height {height: 100%;}
-.u-page-height {height: 90vh;}
-.u-full-width {width: 100%!important;}
-.u-max-full-width {max-width: 100%;}
-.u-pull-right {float: right}
-.u-pull-left {float: left}
+.full-height {height: 100%;}
+.page-height {height: 90vh;}
+.full-width {width: 100%!important;}
+.max-full-width {max-width: 100%;}
+.pull-right {float: right}
+.pull-left {float: left}
+.cf {content: "";display: table;clear: both}
 
 .text-right{text-align:right;}
 .text-center{text-align:center;}
@@ -108,7 +106,7 @@ input[type=email],input[type=number],input[type=password],input[type=search],inp
 .button.big,button.big{font-size:16px;padding:20px 35px;}
 .button.no-outline,button.no-outline{border-width:0;}
 .button.ghost,button.ghost{border-width:2px;}
-.button + small, button + small{font-size:12px;margin-top:20px;max-width:140px;display:block;}
+.button + small, button + small{font-size:12px;margin-top:20px;display:block;}
 label,legend {display: block;margin-bottom: .5rem;}
 
 label{font-size:14px;font-weight:600;}
